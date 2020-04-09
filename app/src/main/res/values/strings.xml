@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Foodiest</string>
+    <string name="title">Title</string>
+
+    <string-array name="food_name">
+        <item>Bakso</item>
+        <item>Gudeg</item>
+        <item>Nasi Goreng</item>
+        <item>Sate</item>
+        <item>Sop Buntut</item>
+        <item>Soto</item>
+        <item>Nasi Liwet</item>
+        <item>Lontong Sayur</item>
+        <item>Rujak Cingur</item>
+        <item>Kupang</item>
+    </string-array>
+
+    <string-array name="place">
+        <item>Somewhere in Indonesia</item>
+        <item>Yogyakarta</item>
+        <item>Somewhere in Indonesia</item>
+        <item>Padang and Madura</item>
+        <item>Somewhere in Java</item>
+        <item>Betawi and Makassar</item>
+        <item>Somewhere in Indonesia</item>
+        <item>Somewhere in Indonesia</item>
+        <item>Surabaya</item>
+        <item>Sidoarjo</item>
+    </string-array>
+
+    <string-array name="kind">
+        <item>Main Course</item>
+        <item>Main Course</item>
+        <item>Main Course</item>
+        <item>Main Course</item>
+        <item>Main Course</item>
+        <item>Main Course</item>
+        <item>Main Course</item>
+        <item>Main Course</item>
+        <item>Main Course</item>
+        <item>Main Course</item>
+    </string-array>
+
+    <string-array name="desc">
+        <item>Bakso atau baso adalah jenis bola daging yang lazim ditemukan pada masakan Indonesia.</item>
+        <item>Gudeg is a traditional Javanese cuisine from Yogyakarta and Central Java, Indonesia.</item>
+        <item>Nasi goreng adalah sebuah makanan berupa nasi yang digoreng dan diaduk dalam minyak goreng atau margarin, biasanya ditambah kecap manis, bawang merah, bawang putih, asam jawa, lada dan bumbu-bumbu lainnya, seperti telur, ayam, dan kerupuk.</item>
+        <item>is a Southeast Asian dish of seasoned, skewered and grilled meat, served with a sauce. It is from Indonesia and popular in Malaysia, Philippines, Singapore, Thailand, and Brunei</item>
+        <item>Sup buntut dibuat dengan ekor sapi. Sedikitnya ada lima versi sup buntut yang popular di seluruh dunia: makanan tradisional Korea, makanan Tiongkok yang lebih mirip semur, ekor sapi goreng panggang</item>
+        <item>Soto is a traditional Indonesian soup mainly composed of broth, meat, and vegetables. Many traditional soups are called soto, whereas foreign and Western influenced soups are called sop. Soto is sometimes considered Indonesians national dish, as it is served from Sumatra to Papua, in a wide range of variations</item>
+        <item>Nasi liwet adalah makanan khas kota Solo dan merupakan kuliner asli daerah Baki, Kabupaten Sukoharjo. Nasi liwet adalah nasi gurih mirip nasi uduk, yang disajikan dengan sayur labu siam, suwiran ayam dan areh</item>
+        <item>Lontong sayur enak</item>
+        <item>Makanan khas Surabaya identiknya dengan rujak cingur dan salah satu spot terbaik mendapatkan kuliner ini ada di daerah Genteng</item>
+        <item> Memang kuliner ini bukan asli Surabaya, tapi tidak ada ruginya mampir ke Sidoarjo, yang jaraknya hanya setengah jam perjalanan darat, untuk dapat merasakan gurih, sedikit asam, sekaligus nikmat olahan kupang, lentho dan sate kerang ini, dengan es kelapa muda sebagai penawar dahaga.</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>Rp 13.500</item>
+        <item>Rp 10.000</item>
+        <item>Rp 12.000</item>
+        <item>Rp 13.000</item>
+        <item>Rp 16.700</item>
+        <item>Rp 14.500</item>
+        <item>Rp 8.500</item>
+        <item>Rp 13.500</item>
+        <item>Rp 10.200</item>
+        <item>Rp 9.500</item>
+    </string-array>
+
+    <array name="image">
+        <item>@drawable/bakso</item>
+        <item>@drawable/gudeg</item>
+        <item>@drawable/nasi_goreng</item>
+        <item>@drawable/sate</item>
+        <item>@drawable/sop_buntut</item>
+        <item>@drawable/soto</item>
+        <item>@drawable/nasi_liwet</item>
+        <item>@drawable/lontong_sayur</item>
+        <item>@drawable/rujak_cingur</item>
+        <item>@drawable/kupang</item>
+    </array>
+</resources>

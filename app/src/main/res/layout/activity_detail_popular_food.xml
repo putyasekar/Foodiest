@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".activity.DetailPopularFoodActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_backstage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_name_detail_populer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.7dp"
+            android:layout_toEndOf="@id/iv_backstage"
+            android:padding="10dp"
+            android:text="Title"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/fm_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/iv_backstage">
+
+            <ImageView
+                android:id="@+id/iv_image_detail"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/gudeg" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fm_detail_image"
+            android:layout_marginTop="16dp"
+            android:text="Rating"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/rt_bar_detail"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fm_detail_image"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/tv_rating"
+            android:numStars="5"
+            android:rating="3.5" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fb_fav_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_name_detail_in_populer"
+            android:layout_toStartOf="@id/fb_exit_detail"
+            android:src="@drawable/ic_favorite_border"
+            app:layout_anchor="@id/fm_detail_image" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fb_exit_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_name_detail_in_populer"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_close"
+            app:layout_anchor="@id/fm_detail_image" />
+
+        <TextView
+            android:id="@+id/tv_name_detail_in_populer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rt_bar_detail"
+            android:layout_marginStart="@dimen/_1sdp"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:text="Title"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_place_detail"
+            android:layout_width="@dimen/_70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_detail_in_populer"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:text="Address"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_place_in_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_detail_in_populer"
+            android:layout_toEndOf="@id/tv_place_detail"
+            android:maxLines="1"
+            android:text="y tempat" />
+
+        <TextView
+            android:id="@+id/tv_kind_detail"
+            android:layout_width="@dimen/_70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_place_detail"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:text="Kind"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_kind_in_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_place_in_detail"
+            android:layout_toEndOf="@id/tv_kind_detail"
+            android:maxLines="1"
+            android:text="y kind" />
+
+        <TextView
+            android:id="@+id/tv_desc_detail"
+            android:layout_width="@dimen/_70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_kind_detail"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:text="Description"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_desc_in_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_kind_in_detail"
+            android:layout_toEndOf="@id/tv_desc_detail"
+            android:maxLines="1"
+            android:text="y desc" />
+
+        <TextView
+            android:id="@+id/tv_harga_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_desc_detail"
+            android:padding="20dp"
+            android:text="Rp. 20.000,-"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_desc_detail"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:paddingStart="8dp"
+            android:text="Order Now"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_visit_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_desc_detail"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="120dp"
+            android:background="@drawable/shape"
+            android:padding="3.5dp"
+            android:paddingStart="8dp"
+            android:text="Visit Us" />
+    </RelativeLayout>
+</ScrollView>
